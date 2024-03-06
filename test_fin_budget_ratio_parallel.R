@@ -188,11 +188,11 @@ log_NC_stacked = as.matrix(out_Simr_torch)
 # Rprof("my_profile.out")
 # 
 # # Code that you want to profile
-# out_Simr_torch = Simr_finoptions_extraBi_torch_parallel(block_obj, Mvec_double, zero_double, yG, Xk_stack, yk_stack, prices, beta_stack, theta_stack, budget_draws, budget_full,  # defined at runtime
-#                                                         extraBi_full, finmult, finmult_full, car_prices_full, 
-#                                                         bonuses_array, finmults_array, car_prices_array, budgets_array, 
-#                                                         mat_idx1,cube_idx1,cube_idx2, 
-#                                                         n,t,nprod, ybm, M, device)
+# out_Simr_torch = fin_budget_ratio_parallel(block_obj, Mvec_double, zero_double, yG, Xk_stack, yk_stack, prices, beta_stack, theta_stack, budget_full, budget2_full, budget_indicator,  # defined at runtime
+#                                            extraBi_full, finmult, finmult_full, car_prices_full, 
+#                                            bonuses_array, finmults_array, car_prices_array, budgets_array, 
+#                                            mat_idx1,cube_idx1,cube_idx2, 
+#                                            n,t,nprod, ybm, M, device)
 # 
 # # Stop profiling
 # Rprof(NULL)
